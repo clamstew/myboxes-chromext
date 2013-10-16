@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>mybox.es Extension's Popup</title>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+
+    <h1>Box It Up</h1>
+
+    <p>These URL's will be sent off to mybox.es for this session:</p>
+
+    <div class="urls"><ul></ul></div>
+
+    <p>This could be an array to send off to the server with an ajax call: </p>
+    <div class="urls-array"></div>
+
+  </body>
+</html>
+
