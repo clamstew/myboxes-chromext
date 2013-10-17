@@ -6,8 +6,8 @@
   "version": "1.0",
 
   "permissions": [
-    "tabs",
-    "<all_urls>"
+    "tabs"//,
+    //"<all_urls>"
   ],
 
   "browser_action": {
@@ -18,10 +18,14 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-
       "exclude_globs": ["chrome-extension://*/*", "chrome-devtools://*/*"],
       "css": ["mystyles.css"],
       "js": ["jquery.min.js", "popup.js"]
     }
-  ]
+  ]//, 
+
+  // "background": {
+  //   "scripts": ["popup.js"],
+  //   "persistent": false
+  // }
 }
